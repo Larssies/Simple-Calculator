@@ -28,10 +28,11 @@ int main() {
         std::cout << number1 * number2;
     } else {
         std::cout << "Invalid operator! Try again!";
+        std::this_thread::sleep_for(2000ms)
     }
 
     // CONSOLE OUTPUT (VRAAG)
-    std::cout << "Kaas?\n";
+    std::cout << "\nKaas?\n";
 
     //CONSOLE INPUT (JOUW ANTWOORD) dan slaat hij dit antwoord op in de variable 'kaas'
     std::cin >> kaas;
@@ -39,8 +40,10 @@ int main() {
     //checkt of de variable kaas een string "kaas" bevat en dan print "nee dankjewel"
     if(kaas == "kaas") {
         std::cout << "Nee dankjewel";
+        std::this_thread::sleep_for(2000ms)
     } else {
         std::cout << "JAA!!!!";
+        std::this_thread::sleep_for(2000ms)
     }
 
     return 0;
